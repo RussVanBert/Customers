@@ -46,6 +46,7 @@
             [defaults setObject:code forKey:@"code"];
             [defaults synchronize];
 
+            NSLog(@"Authorisation code retreived. Now we can list the company files.");
             [[NSNotificationCenter defaultCenter] postNotificationName:@"oauthCodeUpdated" object:nil userInfo:@{@"code":code}];
             [self.navigationController popViewControllerAnimated:YES];
         }

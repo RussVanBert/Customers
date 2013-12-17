@@ -10,6 +10,8 @@
 
 @interface ConnectionViewController : UIViewController <NSURLConnectionDataDelegate>
 
+@property (weak, nonatomic) IBOutlet UIButton *oauthButton;
+
 - (IBAction)oauth:(id)sender;
 - (IBAction)companyFile:(id)sender;
 - (IBAction)customers:(id)sender;
