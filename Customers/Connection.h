@@ -8,11 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-#warning "Set your API Key, Secret and Redirect Uri"
+#warning "Set your API Key, Secret and Redirect Uri" 
 #define YOUR_API_KEY @""
 #define YOUR_API_SECRET @""
-#define REDIRECT_URI @""
-#define REDIRECT_SCHEME @""
+#define REDIRECT_URI @""    // eg. "my-ios-app://redirect"
+#define REDIRECT_SCHEME @"" // eg. "my-ios-app"
 
 #define OAUTH_PATH @"https://secure.myob.com/oauth2/account/authorize"
 #define SECURE_PATH @"https://secure.myob.com/oauth2/v1/authorize"

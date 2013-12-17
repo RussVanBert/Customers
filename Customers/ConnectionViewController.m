@@ -44,6 +44,12 @@
 {
     [super viewDidLoad];
 
+    if ((!YOUR_API_KEY) || (YOUR_API_KEY.length == 0))
+    {
+        NSLog(@"Your API Key has not been set!");
+        return;
+    }
+    
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     NSString *code = [defaults objectForKey:@"code"];
     if (code)
