@@ -242,6 +242,7 @@
     if (!conn.access_token)
     {
         NSLog(@"Bad response! responseData did not contain an access_token \n%@", authorization);
+        return;
     }
     conn.expires_in = [authorization objectForKey:@"expires_in"];
     conn.refresh_token = [authorization objectForKey:@"refresh_token"];
@@ -253,7 +254,8 @@
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     [defaults setObject:conn.refresh_token forKey:@"refresh_token"];
     [defaults synchronize];
-    
+  
+    NSLog(@"Access token retreived");
     if (getCompanyFiles)
     {
         // we only want to get the company file list if the
