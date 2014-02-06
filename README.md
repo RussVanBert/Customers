@@ -9,7 +9,7 @@ The most difficult part of the MYOB API, and many other APIs, is to understand t
 
 # Instructions
 
-## Set you key
+## Set your key
 
 To use this app, set your API key, secret and redirects in Connection.h. 
 
