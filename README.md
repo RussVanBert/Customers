@@ -5,7 +5,7 @@ This application demonstrates the MYOB API for accessing your company file. It e
 
 The main view is controlled by the ConnectionViewController. From there, you can access the OAuth, CompanyFile selection and Customer list views. 
 
-The most difficult part of the MYOB API, and many other APIs, is to understand the OAuth process. The OAuth process uses the myDot credentials to create an oauth code. Once you have the code, you can use it to generate the access token required to list of company files (usually just one file).  
+The most difficult part of the MYOB API, and many other APIs, is to understand the OAuth process. The OAuth process uses the myDot credentials to create an oauth code. Once you have the code, you can use it to generate the access token required to list the company files (usually just one file).  
 
 # Instructions
 
@@ -24,7 +24,7 @@ To use this app, set your API key, secret and redirects in Connection.h.
 
 Now you're ready to run the application. 
 
-First, select OAuth to grant access to the app. Once the myDot user name and password have have been entered, the website will eventually redirect to your REDIRECT_URI. When this occurs, you will be able to extract the oauth code. 
+First, select OAuth to grant access to the app. Once the myDot user name and password have been entered, the website will eventually redirect to your REDIRECT_URI. When this occurs, you will be able to extract the oauth code. 
 
 Now you have the oauth code, select the company file you want to access. Then view the customers.
 
